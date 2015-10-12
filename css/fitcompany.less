@@ -1,0 +1,467 @@
+/* Estrutura Site */
+body {
+	background: @corBG url(../imagens/bg-site.png) fixed center top no-repeat!important;
+	font-family: 'Source Sans Pro'; font-size: 12px;
+}
+header {
+	float: left;
+	display: block;
+	width: 100%; height: 160px;
+}
+section {
+	float: left;
+	display: block;
+	width: 100%; height: auto;
+}
+footer {
+	float: left;
+	display: block;
+	width: 100%; height: auto;
+	border-top: 2px solid @cor1;
+	margin: 20px 0 0 0; background: @corBGFooter;
+	box-shadow:0 0 10px @cor2;
+}
+	.list-menu {
+		list-style: none;
+		float: left;
+		width: 250px; height: auto;
+		margin: 0 20px 10px 0; padding: 0;
+		ul {
+			float: left;
+			width: 240px; height: auto;
+			list-style: none; margin: 0; padding: 0;
+			h4 {
+				height: 28px;
+				font-family:zrnicrg;
+				padding:4px 0;
+				color: @cor1; font-size: 14px;
+				border-bottom:1px solid @cor2;
+				padding-right: 10px; margin-bottom: 5px;
+				font-style:italic; text-shadow:1px 1px 3px @cor2;
+				background: url(../imagens/barra-title.png) 0 24px no-repeat;
+			}
+			li {
+				float: left;
+				width: 250px; height: auto;
+				margin: 0; padding:0;
+				a {
+					float: left;
+					color: @corLink; padding-left: 5px;
+				}
+			}
+		}
+	}
+	.box-infofit {
+		float: right;
+		width: 460px; height: auto;
+		background: url(../imagens/bg-logo-footer.png) 0 55px no-repeat;
+		h4 {
+			height: 28px;
+			font-family:zrnicrg;
+			padding:4px 0;
+			color: @cor1; font-size: 14px;
+			border-bottom:1px solid @cor2;
+			margin-bottom: 5px;
+			font-style:italic; text-shadow:1px 1px 3px @cor2;
+			background: url(../imagens/barra-title.png) right 24px no-repeat;
+			text-align: right;
+		}
+		p {
+			text-align: right; color: @corLink;
+			padding-right: 5px;
+		}
+	}
+/* Ajuste CSS Bootstrap */
+.collapse.in {
+	&:before {
+		content: "";
+ 		background: url(../imagens/hover-menu.png) 0 0 no-repeat;
+ 		width: 50px; height: 46px; position: absolute;
+ 		margin: -7px 0 0 -264px;
+	}
+}
+
+/* Ajuste CSS Plaseholder */
+::-webkit-input-placeholder {
+   color: @cor4;
+}
+
+:-moz-placeholder {
+   color: @cor4;
+}
+
+::-moz-placeholder {
+   color: @cor4;  
+}
+
+:-ms-input-placeholder {  
+   color: @cor4;  
+}
+
+/* Estilos Fit Company */
+.limites {
+	width: 1000px; height: auto;
+	margin: 0 auto; display: block;
+}
+.logo {
+	float: left;
+	width: 203px; height: 47px;
+	margin: 33px 4px 37px 23px;
+}
+.box-pesq-tel {
+	float: right;
+	width: 147px;
+}
+.box-pesquisar {
+	float: right;
+	margin: 23px 0 0 0;
+	input {
+		float: left;
+		width:125px; height:20px;
+		background: url(../imagens/bg-form-pesq.png) 0 0 no-repeat;
+		border:0; outline: none; color: @cor5; padding-left: 25px;
+		font-family: zrnicrg; font-style: italic;
+	}
+	button {
+		float: left;
+		width:22px; height:20px;
+		background: url(../imagens/bt-lupa.png) 0 0 no-repeat;
+		border:0; outline: none; 
+	}
+	::-webkit-input-placeholder {
+   	   color: @cor5;
+	}
+
+	:-moz-placeholder {
+	   color: @cor5;
+	}
+
+	::-moz-placeholder {
+	   color: @cor5;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: @cor5;  
+	}
+}
+.box-telefone {
+	float: right;
+	h2 {
+		font-family: zrnicrg; font-size: 24px; font-style: italic;
+		color: @cor1; text-shadow: 1px 1px 3px @cor6;
+		margin: 5px 0 0 0; padding-right: 5px;
+	}
+}
+/* Section Banners Home */
+.lista-banners {
+	float: left;
+	width: 100%; height: auto;
+	ul {
+		list-style: none; margin: 0; padding:0;
+		li a {
+			float: left; display: inline;
+			width: 250px; height: 150px;
+			background: url(../imagens/bg-list-banners.png) 0 0 no-repeat;
+			text-decoration: none;
+			&:hover, {
+				text-decoration: none;
+				background: url(../imagens/bg-list-banners-hover.png) 0 0 no-repeat;
+			}
+			h3 {
+				font-size: 22px;
+				color: @cor3;
+				text-shadow:0 2px 1px @cor2;
+				margin: 0; padding: 60px 15px 0 15px;
+				font-style:italic;
+			}
+			p {
+				font-size: 12px;
+				color: @cor4;
+				margin: 0; padding: 0 15px;
+				line-height:13px;
+			}
+			img {
+				float: right; margin: -115px 0 0 0;
+			}
+		}
+	}
+}
+
+/* Section Home */
+.col-maior {
+	float: left;
+	width: 778px; height: auto;
+}
+	.box-menu {
+		float: left;
+		width: 230px; height: auto;
+	}
+	.box-content {
+		float: right;
+		width: 548px; height: auto;
+	}
+		.box-slider {
+			float: left;
+			width: 574px; height: 378px;
+			margin: -99px 0 0 -26px; 
+		}
+		.bx-viewport {
+			box-shadow:none!important; border:none!important; float: right;
+			position: initial!important; background: none!important;
+
+		}
+		.bx-pager {
+			width: 101px!important; height: 41px;
+			background: url(../imagens/nav-slider.png) 0 0 no-repeat!important;
+			position: absolute!important;
+			top: 338px; left: 473px;
+		}
+		.conteudo {
+			float: right;
+			width: 100%; height: auto;
+			h2 {
+				height: 100%; height: 50px;
+				padding: 13px 0 0 45px; margin:0;
+				background: @cor3 url(../imagens/ico-presilha.png) 6px 6px no-repeat!important;
+				color: @corTitulo; font-size: 18px; font-family: zrnicrg; font-weight: bold;
+				border-radius: 0 0 40px 0;
+			}
+			h3 {
+				padding: 0 0 0 20px;
+				font-size: 14px; color: @cor4;
+				margin: 22px 10px 10px 0; font-weight: bold;
+			}
+			p {
+				padding: 0 10px 0 30px;
+				font-size: 12px; color: @cor4;
+			}
+			a {
+				float: right;
+				width: 144px; height: 25px;
+				background: url(../imagens/bg-link.png) 0 0 no-repeat;
+				text-align: center; text-decoration: none; color: @corLink;
+				margin-right: 15px; font-family: zrnicrg; font-size: 16px;
+				&:hover {
+					color: @cor4;
+					background: url(../imagens/bg-link-hover.png) 0 0 no-repeat;
+				}
+			}
+		}
+.col-menor {
+	float: right;
+	width: 222px; height: auto;
+}
+	.box-noticias {
+		float: left;
+		width: 100%; height: auto;
+		h2 {
+			float: left;
+			width: 100%; height: auto;
+			font-size: 18px;
+			border-bottom: 1px solid @cor2;
+			color: @cor1; margin: 0;
+			font-family: zrnicrg; font-style: italic;
+			&:before {
+				content: "";
+	     		background: url(../imagens/ico-titulo.png) 0 0 no-repeat!important;
+	     		width: 62px; height: 35px; position: absolute;
+	     		margin: -25px 0 0 -20px;
+			}
+			&:after {
+				content: "";
+				float: left;
+				width: 100px; height: 3px;
+	     		background: @cor2;
+	     		position: absolute; margin: 19px 0 0 -98px;
+			}
+		}
+		ul {
+			float: left;
+			width: 100%; height: auto;
+			margin: 0; padding: 0; list-style: none;
+			li {
+				float: left;
+				width: 100%; height: auto; text-decoration: none;
+				background:  url(../imagens/barra-curva.png) center bottom no-repeat!important;
+				padding: 0 0 0 5px;
+				&:last-child {
+					background:  none!important;	
+				}
+				h3 {
+					margin: 0;
+					font-size: 14px; padding: 10px 0;
+					color: @cor1; font-family: zrnicrg; font-weight: bold;
+				}
+				span {
+					float: right; position: relative;
+					top: -24px; right: 0;
+					font-size: 10px;
+				}
+				img {
+					float: left;
+					width: 52px; height: 49px;
+					background: url(../imagens/bg-ico-novidades.png) 0 0 no-repeat;
+					margin: 0 5px 5px 0;
+				}
+				p {
+					font-size: 12px; color: @cor4;
+				}
+				a {
+					float: right;
+					width: 144px; height: 25px;
+					background: url(../imagens/bg-link.png) 0 0 no-repeat;
+					text-align: center; text-decoration: none; color: @corLink;
+					margin-bottom: 25px; font-family: zrnicrg; font-size: 16px;
+					&:hover {
+						color: @cor4;
+						background: url(../imagens/bg-link-hover.png) 0 0 no-repeat;
+					}
+				}
+			}
+		}
+	}
+	.box-banner {
+		float: left;
+		width: 100%; height: auto;
+	}
+.menu-principal {
+	float: left;
+	width: 230px; height: auto;
+	background: @corbgMenu;
+	border-top: 5px solid @corBorda;
+	border-radius: 20px 0 0 0;
+	overflow: hidden;
+	font-family: zrnicrg; font-style: italic; text-shadow:1px 1px 3px @cor2;
+	h2 {
+		float: right;
+		width: 98%; height: auto;
+		background: url(../imagens/bg-h2-menu.png) 0 0 repeat-x!important;
+		border-radius: 20px 0 0 20px; margin: 0 0 25px 0;
+		padding: 7px 0 7px 20px; font-size: 22px;
+		color: @cor3;
+		box-shadow:0 2px 1px @cor4;
+		&:before {
+			content: "";
+     		background: url(../imagens/ico-titulo.png) 0 0 no-repeat!important;
+     		width: 62px; height: 35px; position: absolute;
+     		margin: -20px 0 0 -20px;
+		} 
+	}
+	ul{
+		float: left; display: block;
+		width: 100%; height: auto;
+		margin: 0 0 30px 0; padding: 0;
+		li {
+			float: left;
+			width: 100%; height: auto;
+			list-style: none;
+			&:first-child { 
+			    border-top:1px solid @cor4;
+			}
+			a {
+				float: left;
+				width: 100%;
+				padding: 2px 7px;
+				font-size: 18px;
+				color: @corLinkMenu;
+				border-left: 5px solid @corBorda;
+				border-bottom: 1px solid @cor4;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+					color: @corLinkMenuHover;
+					border-left: none;
+					padding: 2px 7px 2px 14px;
+					text-shadow:1px 1px 3px @cor4;
+					&:before {
+						content: "";
+			     		background: url(../imagens/hover-menu.png) 0 0 no-repeat;
+			     		width: 50px; height: 46px; position: absolute;
+			     		margin: -10px 0 0 -48px;
+					}
+				}
+			}
+		}
+	}
+}
+.submenu {
+	ul{
+		float: left;
+		width: 100%; height: auto;
+		margin: 0;
+	}
+	li {
+		float: left; width: 100%;
+		height: auto;
+		&:first-child {
+			border-top: none!important;
+		}
+		a {
+			background: @cor2;
+		}
+	}
+}
+.form-group {
+	float: left;
+	width: 100%; height: auto;
+	margin: 0; font-family: zrnicrg; font-style: italic;
+	input {
+		float: left;
+		width: 100%; height: auto;
+		padding: 2px 7px;
+		font-size: 18px; color: @cor2;
+		border-top: 1px solid @cor4;
+		border-bottom: 1px solid @cor4;
+		border-right: none;
+		border-left: 5px solid @corBorda;
+		outline: none!important; border-radius: 0;
+		background-color: @cor1;
+		color: @cor3; text-shadow:1px 1px 3px @cor2;
+	}
+	button {
+		float: right;
+		padding: 7px 10px;
+		font-size: 14px; text-align: center;
+		color: @cor3; background: @cor2;
+		border:0; outline: none; text-shadow:1px 1px 3px @cor6;
+		&hover {
+			background: @cor4;
+		}
+	}
+}
+
+/* Media Queries *
+@media (min-width: 376px) and (max-width: 1400px) {
+	.navbar-header, .navbar-wrapper {
+		display: none!important;
+	}
+}
+@media (max-width: 375px) {
+	.logo, .menu-principal, .width-slider {
+		display: none!important;
+	}
+}
+
+/* @Less */
+@cor1: #f65c42;
+@cor2: #f19a4f;
+@cor3: #fff;
+@cor4: #000;
+@cor5: #adaaac;
+@cor6: #df5d13;
+@corBGFooter: #f8f7f8;
+@corBG: #b2b0b2;
+@corbgMenu: #f65c42;
+@corBorda: #f19a4f;
+@corTitulo: #f65c42;
+@corTexto: #000;
+@corLink: #7c7c7c;
+@corLinkHover: #000;
+@corLinkMenu: #000;
+@corLinkMenuHover: #fff;
+
+/* @font-face */
+@font-face {
+    font-family: zrnicrg;
+    src: url(../fonts/zrnicrg.ttf);
+}
